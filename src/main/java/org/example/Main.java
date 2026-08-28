@@ -3,20 +3,24 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        System.out.println( "Qual o valor de A ? ");
+        int A;
+        A = entrada.nextInt();
+        System.out.println( "Qual o valor de B ? ");
+        int B;
+        B = entrada.nextInt();
+        System.out.println("Primeiro valor: A = " + A + " e B = " + B);
 
-        double valorDaHora;
+        int temporaria = A;
+        A = B;
+        B = temporaria;
+        System.out.println( "Segundo valor: A =  " + A  + " e " + B );
 
-        System.out.println("Informe o valor da hora trabalhada:");
-        valorDaHora = entrada.nextDouble();
 
-        System.out.println("Informe o numero de horas trabalhadas no mes:");
-        double horaTrabalhada = entrada.nextDouble();
-
-        double salario = valorDaHora * horaTrabalhada;
-
-        System.out.println("O salario bruto e " + salario);    }
+    }
 }
+
 
 

@@ -3,15 +3,20 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        double raio;
-        System.out.println("Informe o raio do circulo : ");
-        raio  = entrada.nextDouble();
-        double area;
-        area = 3.14 * raio * raio ;
-        System.out.println("A area do circulo e :" + area);
-    }
+
+        double valorDaHora;
+
+        System.out.println("Informe o valor da hora trabalhada:");
+        valorDaHora = entrada.nextDouble();
+
+        System.out.println("Informe o numero de horas trabalhadas no mes:");
+        double horaTrabalhada = entrada.nextDouble();
+
+        double salario = valorDaHora * horaTrabalhada;
+
+        System.out.println("O salario bruto e " + salario);    }
 }
 
 

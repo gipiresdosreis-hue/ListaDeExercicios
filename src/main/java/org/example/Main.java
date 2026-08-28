@@ -17,6 +17,7 @@ public class Main {
         double salario = valorDaHora * horaTrabalhada;
 
         System.out.println("O salario bruto e " + salario);
+
     }
 }
 

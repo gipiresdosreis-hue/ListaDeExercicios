@@ -11,13 +11,16 @@ public class Main {
 
         double minutos = segundos / 60;
         double horas = segundos / 3600;
-
-
                 System.out.println("Segundos: " + segundos +
                 ", minutos: " + minutos +
                 ", horas: " + horas);
 
+        entrada.close();
+    }
+
+
+
+        
 
         
     }
-}

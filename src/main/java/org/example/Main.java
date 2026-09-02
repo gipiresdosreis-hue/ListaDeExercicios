@@ -1,4 +1,5 @@
-package org.example;
+
+        package org.example;
 import java.util.Scanner;
 
 public class Main {
@@ -7,19 +8,23 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        double lado;
+        double altura;
 
-        System.out.println("Informe o lado do seu quadrado em cm:");
+        System.out.println("Informe a altura do seu retângulo em cm:");
+        altura = entrada.nextDouble();
 
-        lado = entrada.nextDouble();
+        System.out.println("Informe a base do seu retângulo em cm:");
+        double base = entrada.nextDouble();
 
-        double area = lado * lado;
+        double perimetro = base + base + altura + altura;
 
-        System.out.println("Área do quadrado: " + area + " cm quadrados");
+        System.out.println("Perímetro do retângulo: " + perimetro + " cm");
 
         entrada.close();
     }
 }
+
+
 
 
 

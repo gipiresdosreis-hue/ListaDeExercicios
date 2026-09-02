@@ -3,23 +3,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int nota = 100;
-        int frequencia = 50;
+        double v1, v2, v3;
 
-        boolean A = nota >= 50;
-        boolean B = frequencia >= 60;
+        v1 = 75;
+        v2 = 10.7;
+        v3 = 100;
 
-        boolean cond1, cond2, cond3;
+        double media = (v1 + v2 + v3) / 3;
 
-        cond1 = A && B;
-        cond2 = A || B;
-        cond3 = !A;
-
-        System.out.println("O aluno passou? " + cond1);
-        System.out.println("O aluno passou? " + cond2);
-        System.out.println("O aluno passou? " + cond3);
+        System.out.println("Media dos valores: " + media);
     }
 }
+
+
 
 
 

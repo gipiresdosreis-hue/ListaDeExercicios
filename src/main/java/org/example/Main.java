@@ -1,18 +1,16 @@
-package org.example;
-
 public class Main {
+
     public static void main(String[] args) {
 
-        float varf = 2.7f;
+        short varShort = 10;
 
-        long varL = (long) varf;
+        int varInt = varShort;
 
-        // casting explícito
-        double varD = varL;
+        byte varByte = (byte) varInt;
 
-        System.out.println("Valor do float: " + varf);
-        System.out.println("Valor do long: " + varL);
-        System.out.println("Valor do double: " + varD);
+        System.out.println("Valor Short: " + varShort);
+        System.out.println("Valor Int: " + varInt);
+        System.out.println("Valor Byte: " + varByte);
     }
 }
 

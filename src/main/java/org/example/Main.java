@@ -2,10 +2,10 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int valorInt = 12;
-        double valorDouble = valorInt;
+        double valorDouble = 25.7;
+        int valorInt = (int) valorDouble;
 
-        System.out.println("Valor do Dogras " + valorDouble);
+        System.out.println("Valor do Dogras " + valorInt);
     }
 }
 

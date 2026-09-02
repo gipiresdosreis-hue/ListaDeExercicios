@@ -1,16 +1,21 @@
+package org.example;;
 public class Main {
 
     public static void main(String[] args) {
 
-        short varShort = 10;
+        int a, b;
 
-        int varInt = varShort;
+        a = 10;
+        b = 5;
 
-        byte varByte = (byte) varInt;
+        boolean maior = a > b;
 
-        System.out.println("Valor Short: " + varShort);
-        System.out.println("Valor Int: " + varInt);
-        System.out.println("Valor Byte: " + varByte);
+        System.out.println("a maior que b? : " + maior);
+        System.out.println("a menor que b? : " + (a < b));
+        System.out.println("a igual a b? : " + (a == b));
+        System.out.println("a é diferente de b? : " + (a != b));
     }
 }
+
+
 

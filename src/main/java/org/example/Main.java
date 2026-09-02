@@ -1,19 +1,23 @@
-package org.example;;
+package org.example;
 public class Main {
 
     public static void main(String[] args) {
 
-        int a, b;
+        int nota = 100;
+        int frequencia = 50;
 
-        a = 10;
-        b = 5;
+        boolean A = nota >= 50;
+        boolean B = frequencia >= 60;
 
-        boolean maior = a > b;
+        boolean cond1, cond2, cond3;
 
-        System.out.println("a maior que b? : " + maior);
-        System.out.println("a menor que b? : " + (a < b));
-        System.out.println("a igual a b? : " + (a == b));
-        System.out.println("a é diferente de b? : " + (a != b));
+        cond1 = A && B;
+        cond2 = A || B;
+        cond3 = !A;
+
+        System.out.println("O aluno passou? " + cond1);
+        System.out.println("O aluno passou? " + cond2);
+        System.out.println("O aluno passou? " + cond3);
     }
 }
 

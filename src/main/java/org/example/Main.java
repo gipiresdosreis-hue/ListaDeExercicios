@@ -1,24 +1,11 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
+        int valorInt = 12;
+        double valorDouble = valorInt;
 
-        Scanner entrada = new Scanner(System.in);
-
-        System.out.println("Informe a quantidade de segundos: ");
-
-        double segundos = entrada.nextDouble();
-
-        double minutos = segundos / 60;
-        double horas = segundos / 3600;
-
-        System.out.println("Segundos: " + segundos +
-                ", minutos: " + minutos +
-                ", horas: " + horas);
-
-        entrada.close();
+        System.out.println("Valor do Dogras " + valorDouble);
     }
 }
 

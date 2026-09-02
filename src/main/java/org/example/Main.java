@@ -1,5 +1,4 @@
-
-        package org.example;
+package org.example;
 import java.util.Scanner;
 
 public class Main {
@@ -8,21 +7,24 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        double altura;
+        System.out.println("Qual é o valor do produto?");
 
-        System.out.println("Informe a altura do seu retângulo em cm:");
-        altura = entrada.nextDouble();
+        double valorProduto = entrada.nextDouble();
 
-        System.out.println("Informe a base do seu retângulo em cm:");
-        double base = entrada.nextDouble();
+        double desconto = 15.0;
 
-        double perimetro = base + base + altura + altura;
+        double valorDesconto = valorProduto * desconto / 100;
 
-        System.out.println("Perímetro do retângulo: " + perimetro + " cm");
+        double valorFinal = valorProduto - valorDesconto;
+
+        System.out.println("Valor do desconto: R$ " + valorDesconto);
+        System.out.println("Seu valor final com desconto é: R$ " + valorFinal);
 
         entrada.close();
     }
 }
+
+
 
 
 

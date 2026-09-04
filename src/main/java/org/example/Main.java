@@ -8,14 +8,18 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Informe se o funcionário possui veículo próprio: (S/N) ");
+        System.out.println("Informe o cargo do funcionário:  ");
 
         String resposta = entrada.nextLine();
 
-        if (resposta.equalsIgnoreCase("S")) {
-            System.out.println("Auxílio combustível disponível");
+        if (resposta.equalsIgnoreCase("Administrativo") ||
+                resposta.equalsIgnoreCase("Liderança")) {
+
+            System.out.println("Programa de idiomas disponível");
+
         } else {
-            System.out.println("Auxílio combustível não está disponível");
+
+            System.out.println("Programa de idiomas não disponível");
         }
 
         entrada.close();

@@ -1,4 +1,5 @@
 package org.example;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,22 +8,20 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Qual é o valor do produto?");
+        System.out.println("Qual é o valor do salario?");
 
-        double valorProduto = entrada.nextDouble();
+        double salario = entrada.nextDouble();
 
-        double desconto = 15.0;
-
-        double valorDesconto = valorProduto * desconto / 100;
-
-        double valorFinal = valorProduto - valorDesconto;
-
-        System.out.println("Valor do desconto: R$ " + valorDesconto);
-        System.out.println("Seu valor final com desconto é: R$ " + valorFinal);
+        if (salario >= 4000) {
+            System.out.println("Funcionario possui o beneficio do vr");
+        } else {
+            System.out.println("Funcionario nao possui o beneficio");
+        }
 
         entrada.close();
     }
 }
+
 
 
 

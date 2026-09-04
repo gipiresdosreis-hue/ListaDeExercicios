@@ -7,21 +7,25 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Informe o salário do cliente:");
+        System.out.println("Informe o valor investido pelo cliente:");
 
-        double salario = entrada.nextDouble();
-        System.out.println("Informe o valor da parcela desejada:");
-        double parcela = entrada.nextDouble();
-        double porcentagem = salario * 0.30;
+        double valor = entrada.nextDouble();
 
-        if (parcela <= porcentagem) {
 
-            System.out.println("Emprestimo aprovado");
+        if (valor <= 10000) {
 
-        } else {
+            System.out.println("Bronze");
 
-            System.out.println("Emprestimo nao aprovado");
+        } else if (valor <= 50000){
+            System.out.println("Prata");
         }
+        else if (valor <=100000){
+            System.out.println("Ouro");
+        }
+        else {
+            System.out.println("Platinium");
+        }
+
         entrada.close();
     }
 }

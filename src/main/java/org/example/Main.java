@@ -8,14 +8,14 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Informe o tempo de empresa em meses: ");
+        System.out.println("Informe se o funcionário possui veículo próprio: (S/N) ");
 
-        int meses = entrada.nextInt();
+        String resposta = entrada.nextLine();
 
-        if (meses >= 3) {
-            System.out.println("Plano de saúde está disponível ");
+        if (resposta.equalsIgnoreCase("S")) {
+            System.out.println("Auxílio combustível disponível");
         } else {
-            System.out.println("Plano de saúde não está disponível ");
+            System.out.println("Auxílio combustível não está disponível");
         }
 
         entrada.close();

@@ -8,14 +8,14 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Qual é o valor do salario?");
+        System.out.println("Informe o tempo de empresa em meses: ");
 
-        double salario = entrada.nextDouble();
+        int meses = entrada.nextInt();
 
-        if (salario >= 4000) {
-            System.out.println("Funcionario possui o beneficio do vr");
+        if (meses >= 3) {
+            System.out.println("Plano de saúde está disponível ");
         } else {
-            System.out.println("Funcionario nao possui o beneficio");
+            System.out.println("Plano de saúde não está disponível ");
         }
 
         entrada.close();

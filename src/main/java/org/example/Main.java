@@ -9,7 +9,7 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
 
         double valor;
-        double limite = 5000;
+        double limite = 10000;
 
         System.out.println("Digite o valor da transação:");
         valor = entrada.nextDouble();

@@ -8,16 +8,16 @@ public class Main {
 
         Scanner entrada = new Scanner(System.in);
 
-        double valor;
-        double limite = 10000;
+        double salario;
+    
 
-        System.out.println("Digite o valor da transação:");
-        valor = entrada.nextDouble();
+        System.out.println("Informe o valor do salario do cliente:");
+        salario = entrada.nextDouble();
 
-        if (valor > limite) {
-            System.out.println("Transação suspeita!");
+        if (salario > 50000) {
+            System.out.println("Isenção aceita ");
         } else {
-            System.out.println("Transação normal!");
+            System.out.println("Tarifa será mantida");
         }
 
         entrada.close();

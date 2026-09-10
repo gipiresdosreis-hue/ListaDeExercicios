@@ -1,24 +1,26 @@
-package com.example;
+package org.example;
 
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
+
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Informe a renda mensal: ");
-        double renda = entrada.nextDouble(); 
+        double valor;
+        double limite = 5000;
 
-        System.out.println("Informe o score de crédito");
-        double credito = entrada.nextDouble(); 
-        
-        if (renda >= 8000 && credito >= 7000) {
-            System.out.println("Aprovado");
-        } else { 
-            System.out.println("Reprovado");
+        System.out.println("Digite o valor da transação:");
+        valor = entrada.nextDouble();
+
+        if (valor > limite) {
+            System.out.println("Transação suspeita!");
+        } else {
+            System.out.println("Transação normal!");
         }
- 
 
+        entrada.close();
     }
 }
 
